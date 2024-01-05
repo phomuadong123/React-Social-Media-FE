@@ -1,0 +1,64 @@
+
+.account-wrapper {
+    display: flex;
+    padding: 8px;
+    &:hover {
+        background-color: rgba(22, 24, 35, .12);
+    }
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+    margin-left: 12px;
+   
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 650;
+    height: 20px;
+
+}
+
+.check {
+    fill: #20D5EC;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.username {
+    font-size: 12px;
+    padding-top: 6px;
+    color: rgba(22, 24, 35, 0.75);
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: 650;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.093px;
+    color: rgba(22, 24, 35, .75);
+    padding: 8px 0;
+    margin:  0 8px;
+    border-top: 1px solid rgba(22, 24, 35, .12);
+}
+
+.see-more {
+    color: rgb(254, 44, 85);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.093px;
+    cursor: pointer;
+    padding: 8px;
+}

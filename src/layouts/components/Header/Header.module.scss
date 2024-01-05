@@ -1,0 +1,94 @@
+.wrapper {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.inner {
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+
+.logo {
+    margin-bottom: 2px;
+    font-size: 16px;
+    width: 305px;
+}
+
+
+svg {
+    fill: #726f6f;
+}
+
+.upload-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curent-user {
+    display: flex;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+
+.action-btn {
+    background-color: white;
+    padding: 5px 0;
+    padding-left: 25px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.action-btn svg {
+    fill: black;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.action button {
+    background-color: white;
+}
+
+.more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    height: 100%;
+    background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.more-btn svg {
+    fill: black;
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+
+.search-result {
+    width: 500px;
+
+}
+.search {
+    position: relative;
+    display: flex;
+    background: rgba(22, 24, 35, 0.06);
+    align-items: center;
+    width: 500px;
+    height: 46px;
+    border-radius: 92px;
+    padding: 12px 0px;
+    padding-left: 16px;
+    border: 1px solid  transparent;
+    input {
+        background: rgba(28, 30, 43, 0);
+        border: none;
+        font-size: 16px;
+        height: 100%;
+        flex: 1;
+        outline: none;
+    }
+
+    &:hover {
+        border-color: #ccc;
+        border: 1px solid  rgba(7, 7, 7, 0.06);
+        .search-btn {
+            background-color: rgb(228, 222, 214);
+            border: 1px solid  rgba(7, 7, 7, 0.06);
+        }
+    }
+
+    &:focus-within {
+        border: 1px solid  rgba(7, 7, 7, 0.16);
+        .search-btn {
+            border: 1px solid  rgba(7, 7, 7, 0.16);
+        }
+        .search-title svg {
+            fill: black;
+        }
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn{
+        color: #ff0404;
+    }
+
+}
+
+.clear,
+.loading {
+    position: absolute;
+    right: 52px;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+}
+
+.loading {
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+.search-btn {
+    width: 52px;
+    height: 46px;
+
+    border-top-right-radius: 92px;
+    border-bottom-right-radius: 92px;
+    font-size: 16px;
+    padding-top: 3px;
+    position: relative;
+    border-color: transparent;
+    
+    &:hover {
+        background-color: rgb(190, 185, 179);
+        cursor: pointer;
+    }
+}
+
+  
+.search-btn::before {
+    content: '';
+    position: absolute;
+    
+    height: 70%;
+    width: 1px;
+    left: 0px;
+    top: 15%;
+    background-color: rgb(223, 211, 211);
+}
+
+.clear,.loading.search-btn {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-title {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #6d6b6b;
+    padding-bottom: 10px;
+    margin: 8px 0;
+}
